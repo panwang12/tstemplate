@@ -17,7 +17,7 @@
       },
       data(){
         return {
-          msg:"这是我的test分支",
+          msg:"这是我的master分支",
         };
       },
       computed:{
