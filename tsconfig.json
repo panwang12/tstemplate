@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./built/",
+        "sourceMap": true,
+        "strict": true,
+        "module": "amd",
+        "moduleResolution": "node",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "lib":["dom","es2015","es7","es6","es2017"]
+    },
+    "include": [
+        "./src"
+    ],
+    
+    "exclude": [
+        "node_modules"
+    ]
+}
