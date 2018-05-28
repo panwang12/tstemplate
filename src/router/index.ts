@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router)
-// import page1 from'@/components/page1.vue'
+// import page1 from'@/components/page1.tsx'
 // import page2 from'@/components/page2.vue'
 
 
@@ -11,7 +11,7 @@ export default new Router({
     {
       path: '/',
       name: 'page1',
-      component: ()=> import('@/components/page1.vue')
+      component: ()=> import('@/components/page1.tsx')
     },
     {
       path: '/page2',

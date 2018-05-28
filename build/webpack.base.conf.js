@@ -49,19 +49,40 @@ module.exports = {
           loader: "html-url-loader",
           options: { deep: true }
         },*/
+      /*{
+        test: /\.vue$/,
+          loader: 'vue-loader',
+          options: Object.assign(vueLoaderConfig, {
+          loaders: {
+            ts: "ts-loader",
+            tsx: "babel-loader!ts-loader"
+          }
+        })
+      },*/
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: vueLoaderConfig
+          loader: 'vue-loader',
+          options: vueLoaderConfig
       },
       {
+        test: /\.tsx?$/,
+          exclude: /node_modules/,
+        use: [
+        "babel-loader",
+        {
+          loader: "ts-loader",
+          options: { appendTsxSuffixTo: [/\.vue$/] }
+        }
+      ]
+      },
+     /* {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
           appendTsSuffixTo: [/\.vue$/],
         }
-      },
+      },*/
       {
         test: /\.js$/,
         loader: 'babel-loader',
