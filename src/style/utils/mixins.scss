@@ -1,0 +1,8 @@
+@import "config";
+@mixin fit-block($block) {
+  $B: $namespace+"-"+$block !global;
+
+  .#{$B} {
+    @content;
+  }
+}

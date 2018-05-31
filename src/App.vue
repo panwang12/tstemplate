@@ -4,7 +4,10 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="tsx">
+
+import "./app.scss"
+
 import Vue from 'vue'
 export default Vue.extend( {
   name: 'App',
@@ -18,7 +21,7 @@ export default Vue.extend( {
 })
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

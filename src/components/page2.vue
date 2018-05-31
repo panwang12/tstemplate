@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script lang="tsx">
 import Vue from 'vue'
     export default Vue.extend({
       mounted(){

@@ -49,7 +49,7 @@ module.exports = {
           loader: "html-url-loader",
           options: { deep: true }
         },*/
-      /*{
+      {
         test: /\.vue$/,
           loader: 'vue-loader',
           options: Object.assign(vueLoaderConfig, {
@@ -58,12 +58,12 @@ module.exports = {
             tsx: "babel-loader!ts-loader"
           }
         })
-      },*/
-      {
-        test: /\.vue$/,
-          loader: 'vue-loader',
-          options: vueLoaderConfig
       },
+      // {
+      //   test: /\.vue$/,
+      //     loader: 'vue-loader',
+      //     options: vueLoaderConfig
+      // },
       {
         test: /\.tsx?$/,
           exclude: /node_modules/,

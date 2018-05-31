@@ -5,6 +5,7 @@
 
   @Component
     export default class page1 extends Vue{
+      v2=true;
       mounted(){
         getSystemName('wangpan').then((req)=>{
           console.log(req.data)
@@ -19,6 +20,11 @@
          return (
             <div>
             <p>{this.msg}</p>
+            <el-switch
+              value={this.v2}
+              onInput={val => (this.v2 = val)}
+            >
+            </el-switch>
            </div>
           )
         }
