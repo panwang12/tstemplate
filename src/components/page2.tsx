@@ -1,3 +1,4 @@
+
   import Vue from 'vue'
   import { getSystemName } from '../ajax/axios'
   import Component from 'vue-class-component'

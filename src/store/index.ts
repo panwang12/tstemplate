@@ -6,10 +6,18 @@ import Vuex from 'vuex'
 import m1 from './module/m1'
 import m2 from './module/m2'
 import m3 from './module/m3'
-
 Vue.use(Vuex)
-
+let state = {
+  language:"en"
+}
+let mutations = {
+  changeLanguage (state,current){
+    state.language==="en"?state.language="ch":state.language="en"
+  }
+}
 export default new Vuex.Store({
+  state,
+  mutations,
   modules: {
     a: m1,
     b: m2,
