@@ -1,12 +1,11 @@
 
   import Vue from 'vue'
-  import { getSystemName } from '../ajax/axios'
   import Component from 'vue-class-component'
   import {Switch, Button, Message, DatePicker} from "element-ui"
   import Cache from "../utils/cache"
   Vue.prototype.$message = Message
   @Component
-    export default class page1 extends Vue{
+    export default class page2 extends Vue{
       v2=true;
       open(){
         this.$message({
@@ -23,10 +22,6 @@
         window.location.reload()
       };
       munted(){
-        getSystemName('wangpan').then((req)=>{
-          console.log(req.data)
-          this.$store.commit("changeSystemName",req.data)
-        })
       }
       msg="这是我的master分支"
         get systemName():string{

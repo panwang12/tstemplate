@@ -9,7 +9,13 @@
         "target": "es5",
         "experimentalDecorators": true,
         "noImplicitAny": false,
-        "lib":["dom","es2015","es7","es6","es2017"]
+        "lib":["dom","es2015","es7","es6","es2017"],
+        "baseUrl": "./src/",
+        "paths": {
+          "@/*": ["*"],
+          "~/*": ["components/*"],
+          "m/*": ["modules/*"]
+        },
     },
     "include": [
         "./src"

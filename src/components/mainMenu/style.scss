@@ -1,0 +1,9 @@
+@import '~@/style/utils/mixins.scss';
+@import "~@/style/var.scss";
+
+@include fit-block(videos) {
+    display: flex;
+    height: 100%;
+    position: relative;
+  }
+  

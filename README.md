@@ -27,4 +27,15 @@ npm run e2e
 npm test
 ```
 
+## 生成组件文件
+```bash
+// 在components文件夹内生成一个ComponentName文件夹 包含index.tsx和style.scss
+npm run new ComponentName 
+
+// 在modules的子文件夹ModuleFile内生成一个ComponentName文件夹 包含index.tsx和style.scss 
+npm run new ComponentName ModuleFile
+
+// 在modules的子文件夹ModuleFile内生成index.tsx和style.scss 
+npm run new ModuleFile ModuleFile
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
