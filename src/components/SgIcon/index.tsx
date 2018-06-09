@@ -1,7 +1,8 @@
 import Vue from "vue";
 import Component from "vue-class-component";
+import { fail } from "assert";
 
-@Component<SgIcon>({
+@Component<SfIcon>({
   props: {
     name: {
       type: String
@@ -25,27 +26,55 @@ import Component from "vue-class-component";
     }
   }
 })
-export default class SgIcon extends Vue {
+export default class SfIcon extends Vue {
+  static permissioIds = [];
   name: string;
   size: number;
   type: "svg" | "iconfont";
+  permissionId: number | Array<number>;
   isHovering = false;
   disabled: boolean;
+  text: string;
+  needHover: boolean;
+
+  handleClick(e) {
+    if (!this.disabled) {
+      this.$emit("click", e);
+    }
+  }
+  handleMouseenter() {
+    if (this.needHover) {
+      this.isHovering = true;
+      this.$emit("mouseenter");
+    }
+  }
+  handleMouseleave() {
+    if (this.needHover) {
+      this.isHovering = false;
+      this.$emit("mouseleave");
+    }
+  }
+
   render(h) {
     const {
       name,
       size,
+      handleClick,
       type,
-      isHovering,
+      handleMouseenter,
+      handleMouseleave,
       disabled
     } = this;
     return type === "svg" ? (
       <svg
-        class={["icon", "icon"]}
+        class={["sf-icon", "icon", disabled ? "is-disabled" : ""]}
         aria-hidden="true"
         style={{
           "font-size": size + "px"
         }}
+        onClick={handleClick}
+        onMouseenter={handleMouseenter}
+        onMouseleave={handleMouseleave}
       >
         <use
           href={
@@ -58,7 +87,7 @@ export default class SgIcon extends Vue {
     ) : (
       <i
         class={[
-          "icon",
+          "sf-icon",
           "iconfont",
           "icon-" + name,
           disabled ? "is-disabled" : ""
@@ -66,6 +95,9 @@ export default class SgIcon extends Vue {
         style={{
           "font-size": size + "px"
         }}
+        onClick={handleClick}
+        onMouseenter={handleMouseenter}
+        onMouseleave={handleMouseleave}
       />
     );
   }

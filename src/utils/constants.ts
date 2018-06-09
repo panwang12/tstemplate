@@ -12,4 +12,7 @@ export enum modulesTypes {
    "SG0011" = "userManage",
 }
 
-
+export const equipmentTabs = {
+    VIDICON: "2",
+    KEEPER: "3"
+  };

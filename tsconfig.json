@@ -9,6 +9,7 @@
         "target": "es5",
         "experimentalDecorators": true,
         "noImplicitAny": false,
+        "strictNullChecks": false,
         "lib":["dom","es2015","es7","es6","es2017"],
         "baseUrl": "./src/",
         "paths": {

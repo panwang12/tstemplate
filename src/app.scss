@@ -1,14 +1,133 @@
 @import "./style/themes.scss";
 @import './style/iconfont/iconfont.css';
+
+// component
 @import "./components/SgIcon/style.scss";
+@import "./components/SgTabs/style.scss";
+@import "./components/SgTooltip/style.scss";
+@import "./components/SgTree/style.scss";
+@import "./components/mainMenu/style.scss";
 
 
+// modules
 
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+// setting
+@import "./modules/setting/equipmentManage/Sidebar/style.scss";
+
+
+html,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica" !important;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
   }
+}
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  color: $--color-text-primary;
+  font-size: $--font-size-base;
+  font-weight: $--font-weight-lighter;
+  letter-spacing: 1px;
+  overflow: hidden;
+  padding: 0 !important;
+}
+#app {
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  display: flex;
+  .data-text {
+    color: $--global-data-text-color;
+  }
+
+  .number-text {
+    color: $--global-number-text-color;
+    margin: 0 5px;
+    &.is-error {
+      color: $--global-number-text-error-color;
+    }
+  }
+
+  .underline-text {
+    text-decoration: underline;
+  }
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent; /* or add it to the track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $--scrollbar-color;
+  border-radius: 20px;
+}
+
+.sg-icon {
+  margin-right: 8px;
+}
+.sg-pagination {
+  margin-top: 59px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+.sg-table__column {
+  .el-table__column-filter-trigger {
+    margin-left: 8px;
+    position: relative;
+    .el-icon-arrow-down {
+      position: absolute;
+      top: -5px;
+    }
+
+    .el-icon-arrow-down:before {
+      //@include css-triangle($--color-text-status, down, 7px, relative);
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 7px solid $--color-text-status;
+      border-bottom: 7px solid transparent;
+    }
+    .el-icon-arrow-down.el-icon-arrow-up {
+      top: -20px;
+    }
+
+    .el-icon-arrow-down.el-icon-arrow-up:before {
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid $--color-text-status;
+    }
+  }
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}

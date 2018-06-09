@@ -4,6 +4,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import login from './module/login'
+import equipment from './module/equipmentManage'
 Vue.use(Vuex)
 let state = {
   language:"en"
@@ -17,6 +18,7 @@ export default new Vuex.Store({
   state,
   mutations,
   modules: {
-    login:login
+    login,
+    equipment
   }
 })

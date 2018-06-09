@@ -13,14 +13,10 @@ export default class App extends Vue {
   render(h){
     return (
       <div id="app">
-      <Row>
-        <Col span={4}>
-          <mainMenu/>
-        </Col>
-        <Col span={20}>
+        <mainMenu/>
+        <div id="container">
           <router-view/>
-        </Col>
-      </Row>
+        </div>
     </div>
     )
   }

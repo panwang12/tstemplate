@@ -25,8 +25,6 @@ export default class mainMenu extends Vue {
       return;
     };
     let router:any = this.$router;
-   
-    console.log(router.options)
     let mainModule = router.options.routes.filter(function(v){
         return v.meta.authorize && v.meta.type=="main"
     });
@@ -37,7 +35,7 @@ export default class mainMenu extends Vue {
               default-active="/"
               collapse={true}
               router={true}
-              class="el-menu-vertical-demo">
+              class="sg-mainmenu">
               {mainModule.map((v)=>{
                   return (
                     <MenuItem index={v.path}>
@@ -69,6 +67,10 @@ export default class mainMenu extends Vue {
           //   saveloginUserInfo(result.data.accessToken, {"SG0001":1,"SG0002":2,"SG0003":3,"SG0007":7,"SG0008":8})
           //   this.changeLoginStatus(true)
           // })
+          saveloginUserInfo("123", {
+            "SG0001":1,"SG0002":2,"SG0003":3,"SG0004":4,"SG0005":5,"SG0006":6,"SG0007":7,"SG0008":8,"SG0009":9,"SG0010":10,"SG0011":11
+          })
+          this.changeLoginStatus(true)
       }else{
         //跳转到login页面
         this.$router.push("/login")

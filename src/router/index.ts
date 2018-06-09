@@ -53,17 +53,8 @@ const routes = [
     component: ()=> import('m/historyRecord')
   },
   {
-    path: '/personalInfo',
-    name: 'personalInfo',
-    meta:{
-      authorize:false,
-      type:"setting",
-    },
-    component: ()=> import('m/setting/personalInfo')
-  },
-  {
     path: '/equipmentManage',
-    name: 'equipmentMange',
+    name: 'equipmentManage',
     meta:{
       authorize:false,
       type:"setting",
@@ -130,6 +121,17 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
+  const permissionCode = Cache.localGet("permissionCode")
+  if(permissionCode ){
+    Object.keys(permissionCode).forEach(function(v, k){
+      registerRoutes.forEach(function(v1){
+          if(v1.name===modulesTypes[v]){
+            v1.meta.authorize=true
+            registerRoutes[0].meta.authorize=false
+          }
+      })
+    })
+  }
   if(to.meta.authorize){
     next()
   }else{
@@ -142,14 +144,7 @@ const registerRoutes = (router as any).options.routes
 export const visibleModule:any[]=[];
 export const saveloginUserInfo = (accessTocken:string, permissionCode:any):void =>{
   Cache.localSet("accessTocken",accessTocken)
-  // Cache.sessionSet("permissionCode",permissionCode)
-  Object.keys(permissionCode).forEach(function(v, k){
-    registerRoutes.forEach(function(v1){
-        if(v1.name===modulesTypes[v]){
-          v1.meta.authorize=true
-        }
-    })
-  })
+  Cache.localSet("permissionCode",permissionCode)
 }
 
 export default router 

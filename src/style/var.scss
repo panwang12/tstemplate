@@ -1,0 +1,580 @@
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+// Font
+$--font-size-error: 16px !default;
+$--font-size-base: 18px !default;
+$--font-size-large: 20px !default;
+$--font-size-larger: 22px !default;
+$--font-size-login-item: 28px !default;
+$--font-weight-largest: 26px !default;
+$--font-size-page-hint: 30px !default;
+$--font-line-height-primary: 1.5 !default;
+$--font-weight-lighter: 300 !default;
+$--font-weight-normal: 500 !default;
+$--font-weight-bold: 700 !default;
+
+// Colors
+$--color-success: #0eff96 !default;
+$--color-warning: #ffb80e !default;
+$--color-danger: #ff5980 !default;
+$--color-primary: #1c91ff;
+$--color-transparent: transparent;
+// $--color-info: #55cfff !default;
+$--needHelp--dot-fill: #0eff96 !default;
+
+$--color-text-primary: #cddeff !default;
+$--color-text-regular: #cddeff !default;
+$--color-text-secondary: #7baaff !default;
+$--color-text-placeholder: rgba(158, 193, 255, 0.5) !default;
+$--color-text-title: #aaa !default;
+$--color-text-status: #7bbfff !default;
+$--color-text-time: #9ec1ff !default;
+$--color-text-number: #ffc67b !default;
+$--color-text-disabled: rgba(131, 173, 255, 0.6)!default;
+$--color-text-match-date: #fefeff;
+
+//Colors custome
+$--color-table-td: #c8eaff !default;
+$--color-table-th: #6bbdfe !default;
+$--color-table-tr-hover: #ffffff !default;
+$--table-hover-border: #00a1fe !default;
+$--color-text-white: #ffffff;
+$--color-detail-label: #a3c3ff;
+$--color-role-detail-permission-name: rgba(163, 195, 255, 0.8);
+$--color-role-detail-permission-diabled: #6f8cc4;
+$--color-role-detail-permission-enabled: #20cd82;
+$--color-input-unit: rgba(164, 195, 255, 0.5);
+
+$--transfer-item-hover-fill: #1c91ff;
+
+// box-shadow
+$--box-shadow-1: 0 2px 10px 0 rgba(16, 33, 78, 0.3);
+$--box-shadow-2: 0px 3px 20px 0 rgba(10, 27, 46, 0.35);
+$--box-shadow-3: 0px 3px 20px 0 rgba(0, 0, 0, 0.35);
+//border
+$--border-color-1: #179bfe;
+$--border-color-2: #6792e0;
+$--border-color-3: #5c9dff;
+$--border-color-4: #5ab3ff;
+$--border-color-5: #fff;
+$--border-color-6: #7baaff;
+$--border-color-7: #008aff;
+$--border-color-8: #708fca;
+$--border-color-9: #ffae2c;
+$--border-color-10: #1c91ff;
+$--border-color-11: #8cc7ff;
+// background-color
+$--background-fill-1: #1764cc;
+$--background-fill-2: #2953b5;
+$--background-fill-3: #3a97f7;
+$--background-fill-4: #00a3fe;
+$--background-fill-5: #5ab3ff;
+$--background-fill-6: #4095ff;
+$--background-fill-7: #fff;
+$--background-fill-8: #1e5ab4;
+$--background-fill-9: #39a4ff;
+$--background-fill-10: #1287ff;
+$--background-fill-11: #00a1fe;
+$--background-fill-12: rgba(58, 156, 247, 0.3);
+$--background-fill-13: rgba(123, 170, 255, 0.3);
+$--background-fill-14: rgba(#ffae2c, 0.5);
+$--background-fill-15: #145ab9;
+$--background-fill-16: #ee1717;
+$--background-fill-17: #0055b8;
+
+$--icon-hover-background-fill: rgb(60, 166, 255);
+
+// Border
+$--border-login-main: #469ef6;
+$--border-login-input: #2aa4ff;
+$--border-radius-base: 2px !default;
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+$--border-color-base: rgba(145, 206, 255, 0.6) !default;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base
+  !default;
+$--border-color-hover: rgba(158, 193, 255, 1) !default;
+$--border-color-focus: rgba(158, 193, 255, 1) !default;
+$--border-color-department-sidebar: #5c9dff;
+$--border-color-transfer-fill: #3371e6;
+$--border-color-bottom-dashed: rgba(123, 170, 255, 0.7);
+
+//Box-shadow
+$--department-sidebar-color: rgba(10, 27, 46, 0.35);
+
+//Backgroud
+$--department-sidebar-bgcolor: rgba(23, 100, 204, 0.7);
+
+// Link TODO 差hover颜色
+$--link-color: #55cfff !default;
+// $--link-hover-color: $--color-primary !default;
+
+// Button
+$--button-font-size: $--font-size-large !default;
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 22px !default;
+// 次级按钮
+$--button-default-color: #fff;
+$--button-default-fill: rgba(9, 83, 152, 0.5) !default;
+$--button-default-border: #0085fe;
+
+$--button-disabled-fill: rgba(#1459bc, 0.5) !default;
+$--button-disabled-border: rgba(#1459bc, 0) !default;
+$--button-disabled-color: rgba($--color-text-secondary, 0.6)!default;
+// 主按钮
+$--button-primary-border: #3bb0ff !default;
+$--button-primary-fill: rgba(28, 145, 255, 0.8)!default;
+
+$--button-danger-border: #f0366d;
+$--button-danger-fill: rgba(#f0366d, 0.8) !default;
+
+$--button-warning-border: #ff960e;
+$--button-warning-fill: rgba(#ff960e, 0.8) !default;
+
+$--button-small-font-size: $--font-size-large;
+$--button-small-padding-horizontal: 19px;
+$--button-small-padding-vertical: 6px;
+// Radio
+$--radio-font-size: $--font-size-base !default;
+$--radio-input-height: 22px !default;
+$--radio-input-width: 22px !default;
+$--radio-input-border-color: $--border-color-6 !default;
+$--radio-input-border-color-hover: #9ec1ff !default;
+$--radio-checked-input-fill: transparent !default;
+$--radio-input-fill: transparent !default;
+$--radio-disabled-input-border-color: #4c6794 !default;
+$--radio-disabled-input-fill: #4c6794 !default;
+
+$--radio-disabled-input-border-color: #4c6794 !default;
+$--radio-disabled-input-fill: #4c6794 !default;
+
+$--radio-button-font-size: $--font-size-base !default;
+$--radio-button-checked-fill: $--color-primary !default;
+$--radio-button-checked-color: $--color-text-white !default;
+$--radio-button-checked-border-color: $--color-primary !default;
+
+//Checkbox
+$--checkbox-font-size: 18px !default;
+$--checkbox-input-height: 20px !default;
+$--checkbox-input-width: 20px !default;
+$--checkbox-input-border-radius: 2px !default;
+$--checkbox-input-fill: transparent !default;
+$--checkbox-input-border-color: $--border-color-6 !default;
+$--checkbox-color: #ffffff !default;
+
+$--checkbox-disabled-checked-input-fill: #4c6794 !default;
+$--checkbox-disabled-checked-input-border-color: transparent !default;
+$--checkbox-input-border-color-hover: #9ec1ff !default;
+
+//Input
+$--input-border: $--border-base !default;
+$--input-color: #9ec1ff;
+$--input-height: 48px !default;
+$--input-fill: transparent !default;
+$--input-width: auto !default;
+$--input-hover-border: $--border-color-hover !default;
+$--input-placeholder-color: $--color-text-placeholder !default;
+$--input-focus-border: $--border-color-focus !default;
+//custom
+$--input-fill-disabled: rgba(123, 170, 255, 0.2)!default;
+$--input-color-disabled: rgba(255, 255, 255, 0.3) !default;
+
+// DatePicker
+$--datepicker-background-color: #0c408f;
+$--datepicker-color: #ffffff;
+$--datepicker-header-color: #caddfe;
+$--datepicker-active-color: #ffffff;
+$--datepicker-border-color: #179bfe;
+$--datepicker-icon-color: #caddfe;
+$--datepicker-week-color: #caddfe;
+$--datepicker-today-color: #6fceff;
+$--datepicker-hover-text-color: $--datepicker-color;
+$--datepicker-hover-background-color: #1c91ff;
+$--datepicker-current-text-color: #006fd6;
+$--datepicker-current-background-color: #ffffff;
+$--datepicker-header-fontsize: 18px;
+$--datepicker-day-fontsize: 16px;
+$--datepicker-day-cell-size: 30px;
+$--datepicker-inrange-color: rgba(#65b9ff, 0.4);
+$--datepicker-inrange-hover-color: rgba(#65b9ff, 0.4);
+$--datepicker-inrange-text-color: $--color-text-white;
+$--datepicker-inrange-start-end-color: #2b73d7;
+$--datepicker-disabled-color: rgba(255, 255, 255, 0.5);
+
+// Table
+$--table-text-color: $--color-table-td;
+$--table-header-color: $--color-table-th;
+$--table-row-hover-background: rgba(0, 161, 254, 0.5);
+$--table-border: 1px solid rgba(32, 120, 246, 0.6) !default;
+//custom
+$--table-empty-text-color: rgba(123, 170, 255, 0.8);
+
+// SfMessageBox
+// custome
+$--msgbox-border: rgba(75, 153, 254, 1);
+$--msgbox-fill: rgba(35, 65, 123, 1);
+
+// Dropdown
+$--dropdown-menuItem-hover-fill: #1c91ff !default;
+$--dropdown-menuItem-hover-color: #ffffff !default;
+
+// Tabs
+$--tab-header-color: $--color-text-primary !default;
+$--tab-header-color-active: $--color-text-title !default;
+$--tab-header-color-hover: $--color-text-title;
+$--tab-border-bottom-color: rgba(123, 170, 255, 0.5);
+$--tab-header-active-bar-fill: #65b9ff;
+
+// Badge
+$--badge-fill: #f0366d !default;
+$--badge-radius: 20px !default;
+$--badge-font-size: 18px !default;
+$--badge-padding: 10px !default;
+$--badge-size: 25px !default;
+
+// tag
+$--tag-border: #00cdf3;
+$--tag-fill: rgba(0, 203, 254, 0.4);
+
+//Tree
+$--tree-text-color: #caddfe;
+$--tree-node-hover-color: rgba(28, 158, 255, 0.7);
+$--tree-expand-icon-color: #4db7fe;
+//Tree custome
+$--tree-node-click-color: rgba(28, 158, 255, 1);
+
+// Pagination
+$--pagination-font-size: 14px;
+$--pagination-fill: $--color-transparent;
+$--pagination-color: rgba(123, 191, 255, 0.8);
+$--pagination-hover-color: $--color-text-status;
+$--pagination-button-border: solid 1px rgba(59, 176, 255, 0.8);
+$--pagination-button-hover-border: solid 1px rgb(59, 176, 255);
+$--pagination-border-radius: 2px;
+$--pagination-button-color: $--color-text-status;
+$--pagination-button-width: 50px;
+$--pagination-button-height: 36px;
+$--pagination-button-disabled-color: #4c6794;
+$--pagination-button-disabled-fill: $--color-transparent;
+$--pagination-button-margin: 5px;
+$--pagination-current-color: $--color-text-title;
+$--pagination-current-fill-color: #1c91ff;
+
+// Dialog
+$--dialog-background-color: #153375;
+$--dialog-border: solid 1px #4b99fe;
+$--dialog-side-border: solid 1px rgba(92, 157, 255, 0.5);
+$--dialog-border-radius: 4px;
+$--dialog-title-font-size: 24px;
+$--dialog-title-color: $--color-text-title;
+$--dialog-title-fill: #286dda;
+$--dialog-body-fill: $--dialog-background-color;
+$--dialog-footer-fill: #1b3e7a;
+$--dialog-footer-border: solid 1px #297dfe;
+$--dialog-close-button-size: 52px;
+$--dialog-close-button-color: #caddfe;
+$--dialog-close-button-fontsize: 27px;
+$--dialog-close-button-background: rgba(0, 105, 226, 0.8);
+$--dialog-close-button-background-hover: rgba(0, 105, 226, 1);
+$--dialog-close-button-border: solid 1px #008ef1;
+$--dialog-close-button-shadow: 0px 3px 10px 0px rgba(7, 38, 87, 0.4);
+
+// SfMessage
+$--msg-height: 52px;
+$--msg-min-width: 320px;
+$--msg-padding: 40px;
+$--msg-fontsize: 22px;
+$--msg-color: #fff;
+$--msg-fill-success: rgba(0, 212, 112, 0.9);
+$--msg-fill-success-border: #00ec8d;
+$--msg-fill-warning: rgba(255, 162, 36, 0.9);
+$--msg-fill-warning-border: #ffbe62;
+$--msg-fill-error: rgba(250, 38, 103, 0.9);
+$--msg-fill-error-border: #ff5f88;
+$--msg-animation-time: 0.5s;
+
+//Icon
+$--icon-orgs-color: $--color-text-secondary;
+
+//Sidebar
+$--sidebar-fill: rgba(23, 100, 204, 0.7);
+$--sidebar-shadow-color: rgba(10, 27, 46, 0.35);
+
+//From
+$--form-item-color: #fff;
+
+//Switch
+//custom
+$--color-switch-open-fill: rgba(0, 255, 152, 0.3) !default;
+$--color-switch-close-fill: rgba(255, 56, 112, 0.3)!default;
+//original
+$--switch-on-color: $--color-switch-open-fill;
+$--switch-off-color: $--color-switch-close-fill;
+$--switch-height: 30px !default;
+$--switch-core-border-radius: 15px !default;
+//custom
+$--border-switch-open: #08c290;
+$--border-switch-close: #fe2c6d;
+$--border-switch-open-hover: #00ff98;
+$--color-switch-close-hover-fill: rgba(254, 44, 109, 0.3) !default;
+$--color-switch-open-button-fill: rgba(0, 255, 152, 0.8) !default;
+$--color-switch-open-button-hover-fill: rgba(0, 255, 152, 1) !default;
+$--color-switch-close-button-fill: rgba(255, 56, 112, 0.8) !default;
+$--color-switch-close-button-hover-fill: rgba(255, 56, 112, 1) !default;
+$--color-switch-open-text: #00ff98;
+$--color-switch-close-text: #ff5480;
+$--color-switch-close-hover-text: #ff5980;
+$--border-switch-disabled-open: rgba(8, 194, 144, 0.8);
+$--border-switch-disabled-close: rgba(254, 44, 109, 0.8);
+$--color-switch-disabled-open-fill: rgba(32, 205, 130, 0.4);
+$--color-switch-disabled-close-fill: rgba(240, 54, 109, 0.45);
+$--color-switch-disabled-open-button-fill: rgba(0, 255, 152, 0.2);
+$--color-switch-disabled-close-button-fill: rgba(255, 56, 112, 0.2);
+$--color-switch-disabled-open-text: rgba(0, 255, 152, 0.5);
+$--color-switch-disabled-close-text: rgba(255, 89, 128, 0.8);
+
+// Pages
+$--main-padding-side: 40px;
+$--global-data-text-color: $--color-text-white;
+$--global-number-text-color: $--color-warning;
+$--global-number-text-error-color: $--color-danger;
+
+// Library
+$--library-header-back-color: $--border-color-6;
+$--library-header-title-color: $--color-text-title;
+$--library-header-color: #7bbfff;
+$--library-second-header-fill: rgba(58, 156, 247, 0.3);
+$--library-layout-switch-color: rgba($--color-text-primary, 0.7);
+$--library-layout-switch-color-selected: $--color-text-primary;
+$--library-layout-switch-fill-selected: #338ae4;
+
+$--library-doclist-item-fill: rgba(0, 161, 254, 0.5);
+$--library-doclist-item-border: solid 1px transparent;
+$--library-doclist-item-hover-border-color: #179bfe;
+$--library-doclist-item-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.35);
+$--library-doclist-item-name-color: rgba($--color-text-white, 0.7);
+$--library-doclist-item-hover-name-color: #fff;
+$--library-doclist-item-ops-item-padding: 0 20px;
+$--library-doclist-item-ops-fill: #0c408f;
+$--library-doclist-item-ops-border: solid 1px #179bfe;
+$--library-doclist-item-ops-shadow: 0 2px 10px 0 rgba(16, 33, 78, 0.3);
+$--library-doclist-item-ops-fontsize: 17px;
+$--library-doclist-item-ops-color: rgba($--color-text-white, 0.7);
+$--library-doclist-item-ops-hover-fill: #1c91ff;
+$--library-doclist-item-ops-hover-color: #fff;
+$--library-doclist-item-type-icon-fill: #1f4c9c;
+$--library-doclist-item-type-icon-color-search: #00af4a;
+$--library-doclist-item-type-icon-color-task: #7bbfff;
+$--library-doclist-item-type-icon-border-color: #21acff;
+$--library-doclist-item-hover-type-icon-fill: #1f5eae;
+$--library-doclist-item-hover-type-icon-color: #fff;
+$--library-doclist-item-hover-type-icon-border-color: #fff;
+
+$--library-detail-header-tag-border: solid 1px rgba(14, 255, 150, 0.7);
+$--library-detail-header-tag-fill: rgba(14, 255, 150, 0.3);
+$--library-detail-header-tag-color: #0eff96;
+$--library-detail-header-more-color: $--color-text-secondary;
+
+$--library-filter-label-color: #cddeff;
+$--library-filter-label-dash-color: #7bbfff;
+
+$--library-editor-subtitle-color: rgba(123, 170, 255, 0.8);
+$--library-editor-divider-fill: rgba(65, 95, 154, 0.8);
+$--library-editor-image-fill: #145ab9;
+$--library-editor-image-border-color: #6792e0;
+
+$--library-more-header-border: 1px solid rgba(65, 95, 154, 0.8);
+$--library-more-header-divider-border: #5577b9;
+$--library-more-header-color: $--color-text-secondary;
+$--library-more-header-list-title-color: $--color-text-white;
+
+$--library-search-bottom-color: $--border-color-6;
+$--library-search-bottom-line: rgba($--library-search-bottom-color, 0.5);
+
+//Select
+$--select-option-color: rgba($--color-text-white, 0.7);
+$--select-input-focus-background: $--border-color-focus;
+$--select-option-height: 50px;
+$--select-option-hover-background: rgba(28, 145, 255, 0.7);
+$--select-dropdown-background: #0c408f;
+$--select-dropdown-shadow: 0px 2px 10px 0 rgba(20, 35, 79, 0.3);
+$--select-dropdown-border: 1px solid #429fff;
+$--select-dropdown-padding: 0;
+$--select-option-selected: $--color-text-white;
+
+//Custom Select
+$--select-option-selected-fill: rgba(28, 145, 255, 1);
+
+// SfTooltip
+$--tooltip-warn-fill: #ffaf33;
+$--tooltip-warn-color: #fff;
+$--tooltip-warn-border: #ffaf33;
+$--tooltip-normal-fill: #153375;
+$--tooltip-normal-color: #fff;
+$--tooltip-normal-border: #429fff;
+$--tooltip-special-fill: #0082fe;
+$--tooltip-special-color: #fff;
+$--tooltip-special-border: #179bfe;
+$--tooltip-tool-color: rgba(#fff, 0.7);
+$--tooltip-tool-fill: #0c408f;
+
+// Upload
+$--upload-drag-mask-background: rgba(0, 0, 0, 0.8);
+$--upload-drag-mask-content-border: dashed 1px #73c0ff;
+$--upload-drag-mask-content-color: #7bbfff;
+$--upload-picture-card-fill: transparent;
+$--upload-picture-card-normal-color: #a3c3ff;
+$--upload-picture-card-color: rgba($--upload-picture-card-normal-color, 0.8);
+$--upload-close-button-size: 32px;
+$--upload-close-button-fontsize: 12px;
+
+// SfTree
+$--tree-tooltip-icon-color: #fff;
+$--tree-tooltip-color: #fff;
+
+//Form
+
+$--form-detail-content-color: #fff;
+$--form-detail-label-color: rgba(113, 167, 254, 0.8);
+
+// Map
+$--map-draw-polygon-btn-fill: rgba($--background-fill-10, 0.9);
+$--map-draw-zoom-btn-fill: rgba(#23499c, 0.9);
+$--map-draw-zoom-btn-border-color: #254b9e;
+$--map-draw-zoom-btn-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+
+//SfTreeTransfer
+$--tree-transfer-left-fill: transparent;
+$--tree-transfer-right-fill: transparent;
+$--tree-transfer-selected-title-color: #7baaff;
+$--tree-transfer-border-color: #2a64ce;
+
+// SideNav
+$--sidenav-fill: rgba(#1d1f24, 0.6);
+$--sidenav-shadow: 0 3px 12px 0 rgba(10, 90, 148, 0.35);
+$--sidenav-item-color: rgba($--color-text-white, 0.6);
+$--sidenav-item-active-color: $--color-text-white;
+$--sidenav-item-hover-fill: #141e31;
+$--sidenav-setting-hover-fill: #141e31;
+$--sidenav-setting-item-hover-fill: #3a97f7;
+$--sidenav-logout-border: 1px solid #273349;
+
+// home
+$--home-info-card-background: #3f66c5;
+$--home-info-card-color: #98ceff;
+$--home-info-dialog-background: #0055b8;
+$--home-info-dialog-attribute: #64fc94;
+$--home-info-title-count-color: #76b5f0;
+$--home-linear-gradient-color-top: linear-gradient(to top, #a0cdff, #f0f9ff),
+  linear-gradient(#ffffff, #ffffff);
+$--home-title-count-t1-color: #ffac4a;
+$--home-title-count-t2-color: #fcda20;
+$--home-title-count-t3-color: #54cc80;
+$--home-title-count-t4-color: rgba(255, 255, 255, 0.6);
+$--home-other-count-video-color: #ef9296;
+$--home-other-count-library-color: #d3d6a2;
+$--home-other-count-target-color: #60e885;
+$--home-other-target-user-color: #2d88c9;
+
+//login
+$--background-login-main: #18386f;
+$--background-login-btn: radial-gradient(circle, #0d85ff, #0078ff);
+
+//userTable
+
+//roleTable
+
+
+// Export
+$--export-hint-color: $--color-text-white;
+$--export-num-hint-color: rgba(158, 193, 255, 0.7);
+$--export-num-hint-wrong-color: rgba($--color-danger, 0.7);
+$--export-input-divider-color: rgba(#a3c3ff, 0.6);
+
+// Global Task
+$--global-task-fill: #22499f;
+$--global-task-border-color: #5c9dff;
+$--global-task-shadow: 0 2px 35px 0 rgba(0, 0, 0, 0.25);
+$--global-task-title-fill: #1c91ff;
+$--global-task-title-color: $--color-text-white;
+$--global-task-item-color: $--color-text-primary;
+$--global-task-item-hover-color: $--color-text-white;
+$--global-task-item-hover-fill: rgba(#1c91ff, 0.7);
+$--global-task-item-status-color-processing: #ffb80e;
+$--global-task-item-status-color-stoped: rgba(255, 255, 255, 0.4);
+$--global-task-item-button-stop: #ff5980;
+$--global-task-item-button-download: #0eff96;
+
+$--scrollbar-color: rgba(#4792f0, 0.7);
+
+//search
+$--search-image-list-num-color: #fff;
+$--search-image-list-num-border: #00cbfe;
+$--search-image-list-address-color: #fff;
+$--search-demoWrapper-demo-border: #3d68c0;
+$--search-dropDownItem-text-color: rgba(#fff, 0.7);
+
+//imagecard
+$--imagecard-match-border: #f0366d;
+$--imagecard-track-color-1: #ff542c;
+$--imagecard-track-color-2: #ffee2c;
+$--imagecard-track-color-3: #ffae2c;
+$--imagecard-track-color-4: #0eea32;
+$--imagecard-track-color-5: #4ce1ff;
+$--imagecard-track-color-6: #eb8dff;
+$--imagecard-track-color-7: #ff4081;
+$--imagecard-track-color-8: #fff9c4;
+$--imagecard-track-color-9: #ffab91;
+$--imagecard-track-color-10: #1de9b6;
+$--imagecard-track-color-11: #7cb342;
+$--imagecard-track-color-12: #d500f9;
+//selectWrapper
+$--popover-fill: #0c408f;
+$--popover-border-color: #429fff;
+$--popover-box-shadow: $--select-dropdown-shadow;
+
+// Notification
+$--noticication-alert-border-color: #e11020;
+$--noticication-alert-fill: rgba(#a80e19, 0.8);
+$--noticication-alert-shadow-color: 0 3px 32px 0 rgba(159, 0, 22, 0.65);
+$--noticication-title-color: #f4f4f4;
+$--noticication-message-color: rgba(255, 255, 255, 0.7);
+$--noticication-alert-close-shadow: 0 3px 10px 0 rgba(15, 40, 88, 0.4);
+$--noticication-alert-text-button-color: rgba(254, 234, 234, 0.8);
+
+$--noticication-list-background: rgba(#581e23, 0.4);
+$--noticication-list-border-color: rgba(#995459, 0.6);
+$--noticication-list-shadow: 0 3px 25px 0 rgba(#5f0814, 0.4);
+
+// TaskCard
+$--task-card-shadow: 0 3px 20px 0 rgba(10, 27, 46, 0.35);
+$--task-card-title-fill: #1a66d2;
+$--task-card-video-background: #292e3a;
+
+// AlarmList
+$--task-alarm-list-item-address-color: #fffefe;
+$--task-alarm-list-item-icon-color: #12aeff;
+
+// AlarmDetail
+$--task-alarm-detail-alarm-fill: rgba(#ed3167, 0.4);
+$--task-alarm-detail-alarm-color: #ff667c;
+$--task-alarm-detail-alarm-border: #ff4e63;
+$--task-alarm-detail-similar-title-border: #287ecb;
+$--task-alarm-detail-divider: rgba(#3ca6ff, 0.5);
+
+//TableFilter
+$--table-filter-border-color: #179bfe;
+$--table-filter-box-shadow-color: rgba(16, 33, 78, 0.3);
+$--table-filter-fill: #0c408f;
+$--table-filter-color: rgba(255, 255, 255, 0.7);
+$--table-filter-active-fill: #1c91ff;
+$--table-filter-hover-fill: rgba(#1c91ff, 0.7);
+
+// Loading
+$--loading-text-background: linear-gradient(to top, #2ba2f7, #b3e7ff),
+  linear-gradient(#7bbfff, #7bbfff);
+
+//personnalInfo
+$--inputGutter--color: rgba($--color-text-secondary, 0.6);
+  

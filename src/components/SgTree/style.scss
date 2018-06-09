@@ -1,0 +1,92 @@
+@import '~@/style/utils/mixins.scss';
+@import "~@/style/var.scss";
+
+@include b(tree) {
+  @include e(title) {
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    .sf-tree__count {
+      color: $--color-text-white;
+    }
+    @include when(clicked) {
+      background-color: $--tree-node-click-color;
+    }
+  }
+
+  @include e(label) {
+    width: 100%;
+    .el-badge {
+      top: 5px;
+    }
+    &.delete{
+      color: rgba(205, 222, 255, 0.5);
+      text-decoration:line-through
+    }
+    &:hover {
+      .is-renderNode {
+        display: inline-block;
+      }
+    }
+    .is-renderNode {
+      padding-left: 8px;
+      display: none;
+      position: absolute;
+      right: 8px;
+      top: 0;
+    }
+  }
+  @include e(count) {
+    color: $--color-text-secondary;
+    font-size: $--font-size-base;
+    display: inline-block;
+    padding-left: 9px;
+  }
+  @include e(tools) {
+    position: fixed;
+    color: rgba(255, 255, 255, 0.7);
+    background: $--background-fill-1;
+    border: 1px solid $--border-color-1;
+    font-size: $--font-size-base;
+    width: 141px;
+    z-index: 10;
+    left: 468px;
+    .sf-icon {
+      color: $--tree-tooltip-icon-color;
+      position: absolute;
+      left: 20px;
+      margin-right: 14px;
+    }
+
+    li {
+      height: 36px;
+      line-height: 36px;
+      cursor: pointer;
+      &:hover {
+        color: $--color-text-white;
+        background: $--color-primary;
+      }
+      span {
+        padding-left: 50px;
+      }
+    }
+
+    .triangle-outer {
+      position: absolute;
+      border-style: solid;
+      border-color: transparent $--border-color-1 transparent transparent;
+      border-width: 6px;
+      left: -13px;
+    }
+
+    .triangle-inner {
+      position: absolute;
+      border-style: solid;
+      border-color: transparent $--background-fill-1 transparent transparent;
+      border-width: 8px;
+      left: -13px;
+    }
+  }
+}

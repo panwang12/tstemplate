@@ -1,0 +1,40 @@
+@import "~@/themes/mixins/mixins.scss";
+@import "~@/themes/dark/var.scss";
+
+@include b(messageBox) {
+  .el-dialog--center {
+    background-color: $--msgbox-fill;
+    border: 1px solid $--msgbox-border;
+    .el-dialog__header {
+      padding-top: 66px;
+      color: #fff;
+      font-size: $--font-weight-largest;
+      background: $--dialog-body-fill;
+
+      .sf-icon {
+        margin-right: 8px;
+      }
+
+      > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .el-dialog__body {
+      padding: 51px 27px 74px;
+      color: #fff;
+      text-align: center;
+      font-size: $--font-size-large;
+    }
+    .el-dialog__footer {
+      padding-bottom: 48px;
+      border-top-color: transparent;
+      background: $--dialog-body-fill;
+    }
+  }
+}
+.emptyMessageBox .el-dialog__body {
+  padding: 37px 0px !important;
+}

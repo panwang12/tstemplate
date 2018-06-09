@@ -1,8 +1,7 @@
 @import '~@/style/utils/mixins.scss';
 @import "~@/style/var.scss";
 
-@include fit-block(videos) {
-    display: flex;
+@include b(mainmenu) {
     height: 100%;
     position: relative;
   }

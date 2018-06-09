@@ -1,0 +1,94 @@
+@import '~@/style/utils/mixins.scss';
+@import "~@/style/var.scss";
+
+@include b(tooltip) {
+  @include m(warn) {
+    @include when(dark) {
+      background: $--tooltip-warn-fill;
+      color: $--tooltip-warn-color;
+      border-radius: 2px;
+      border: 1px solid $--tooltip-warn-border;
+      font-size: 18px;
+      padding: 14px 21px;
+    }
+    &[x-placement^="top"] .popper__arrow {
+      border-top-color: $--tooltip-warn-border;
+      &::after {
+        bottom: 2px;
+        border-top-color: $--tooltip-warn-fill;
+      }
+    }
+    &[x-placement^="bottom"] .popper__arrow {
+      border-bottom-color: $--tooltip-warn-border;
+      &::after {
+        top: 2px;
+        border-bottom-color: $--tooltip-warn-fill;
+      }
+    }
+  }
+  @include m(normal) {
+    @include when(light) {
+      background: $--tooltip-normal-fill;
+      color: $--tooltip-normal-color;
+      border: 1px solid $--tooltip-normal-border;
+      border-radius: 2px;
+      font-size: 18px;
+      padding: 10px 19px;
+      &[x-placement^="top"] .popper__arrow {
+        border-top-color: $--tooltip-normal-border;
+        &::after {
+          bottom: 2px;
+          border-top-color: $--tooltip-normal-fill;
+        }
+      }
+      &[x-placement^="bottom"] .popper__arrow {
+        border-bottom-color: $--tooltip-normal-border;
+        &::after {
+          top: 2px;
+          border-bottom-color: $--tooltip-normal-fill;
+        }
+      }
+    }
+  }
+  @include m(special) {
+    @include when(dark) {
+      background: $--tooltip-special-fill;
+      color: $--tooltip-special-color;
+      border: 1px solid $--tooltip-special-border;
+      font-size: 20px;
+      border-radius: 4px;
+      padding: 18px 29px;
+      &[x-placement^="top"] .popper__arrow {
+        border-top-color: $--tooltip-special-border;
+        &::after {
+          bottom: 2px;
+          border-top-color: $--tooltip-special-fill;
+        }
+      }
+      &[x-placement^="bottom"] .popper__arrow {
+        border-bottom-color: $--tooltip-special-border;
+        &::after {
+          top: 2px;
+          border-bottom-color: $--tooltip-special-fill;
+        }
+      }
+    }
+  }
+  @include m(tool) {
+    @include when(dark) {
+      padding: 0;
+      background: $--tooltip-tool-fill;
+      color: $--tooltip-tool-color;
+      border: 1px solid $--border-color-1;
+      border-radius: 4px;
+      box-shadow: 0px 2px 10px 0 $--box-shadow-1;
+      &[x-placement^="right"] .popper__arrow {
+        border-right-color: $--border-color-1;
+        &::after {
+          left: 2px;
+          border-right-color: $--tooltip-tool-fill;
+        }
+      }
+    }
+  }
+}

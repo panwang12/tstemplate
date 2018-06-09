@@ -16,5 +16,9 @@ export default {
     personalInfo: "personalInfo",
     roleManage: "roleManage",
     systemSetting: "systemSetting",
-    userManage: "userManage"
+    userManage: "userManage",
+
+    // 设备管理
+    vidicon: "vidicon",
+    keeper: "keeper",
 }

@@ -1,0 +1,82 @@
+@import '~@/style/utils/mixins.scss';
+@import "~@/style/var.scss";  
+
+@include b(equipmentSidebar) {
+  // background-color: $--sidebar-fill;
+  box-shadow: 0 3px 20px 0 $--sidebar-shadow-color;
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  // @include e(title) {
+  //   height: 80px;
+  //   line-height: 80px;
+  //   padding-left: 34px;
+  //   // font-size: 26px;
+  //   letter-spacing: 2px;
+  //   // color: $--color-text-title;
+  // }
+  @include e(group-wrap) {
+    height: 140px;
+    padding-left: 34px;
+    & .sg-tree{
+      width: fit-content;
+      min-width: 340px;
+    }
+  }
+  @include e(totalCount) {
+    font-size: 20px;
+    margin: -10px 0 0 -34px;
+    padding-left: 34px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    &:hover{
+      min-width: 100%;
+      width: fit-content;
+      cursor: pointer;
+      //background-color: $--global-task-item-hover-fill;
+      box-shadow: 0px 3px 20px 0 $--department-sidebar-color;
+    }
+  }
+  @include e(group) {
+    height: 90px;
+    line-height: 90px;
+    font-size: 22px;
+    color: $--border-color-6;
+    display: block;
+  }
+
+  @include e(tabs) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    .el-tabs__nav-wrap {
+      padding: 0 !important;
+    }
+    .el-tabs__nav-prev,
+    .el-tabs__nav-next {
+      display: none;
+    }
+    .el-tabs__item {
+      padding: 15px 25px 0 !important;
+    }
+
+    .el-tree {
+      background: transparent;
+    }
+
+    .el-tabs__item {
+      padding: 15px 20px 0;
+    }
+
+    .el-tabs__content {
+      flex-grow: 1;
+      overflow: auto;
+    }
+  }
+}

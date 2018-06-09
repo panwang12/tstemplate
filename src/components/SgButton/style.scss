@@ -1,0 +1,13 @@
+@import "~@/themes/mixins/mixins.scss";
+@import "~@/themes/dark/var.scss";
+
+@include b(button) {
+  .sf-icon {
+    margin-right: 10px;
+  }
+  font-weight: $--font-weight-lighter;
+  > span {
+    display: inline-flex;
+    align-items: center;
+  }
+}
